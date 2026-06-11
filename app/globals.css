@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* NQa Brand Colors */
+  --charcoal:   #26242A;
+  --teal:       #6BC8C0;
+  --warm-gray:  #A89C94;
+  --blush:      #F4C2C2;
+  --forest:     #286D0A;
+  --light-gray: #DAD8D8;
+  --white:      #FFFFFF;
+  --off-white:  #F8F7F6;
+
+  /* Typography */
+  --font-sans: 'Montserrat', Arial, sans-serif;
+
+  /* Easing */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--off-white);
+  color: var(--charcoal);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--warm-gray); border-radius: 2px; }
+
+/* ── Selection ── */
+::selection { background: var(--teal); color: var(--white); }
+
+/* ── Focus ── */
+:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }
+
+/* ── Reduced motion ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
