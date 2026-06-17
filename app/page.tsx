@@ -26,13 +26,13 @@ function Hero() {
         <div style={{ ...fadeIn(0.2), marginBottom: '2.25rem' }}>
           <h1 style={{ fontFamily: 'Montserrat, Arial, sans-serif', fontSize: 'clamp(2.2rem, 5.5vw, 5.5rem)', fontWeight: 700, letterSpacing: '-0.03em', lineHeight: 1.0, color: '#fff' }}>
             Nea Quiachon<br />
-            <em style={{ color: '#6BC8C0', fontStyle: 'italic', fontWeight: 300 }}>&amp; Associates</em>
+            <em style={{ color: '#fff', fontStyle: 'italic', fontWeight: 300 }}>&amp; Associates</em>
           </h1>
         </div>
         <div style={{ ...fadeIn(0.4), display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', flexWrap: 'wrap', gap: '2rem' }}>
           <div>
             <p style={{ fontFamily: 'Montserrat, Arial, sans-serif', fontSize: 'clamp(0.95rem, 2vw, 1.25rem)', fontWeight: 300, fontStyle: 'italic', color: 'rgba(255,255,255,0.65)', marginBottom: '0.5rem' }}>
-              Preventing Disputes. Protecting Interests.
+              Preventing Disputes. <span style={{ color: '#6BC8C0' }}>Protecting Interests.</span>
             </p>
             <p style={{ fontFamily: 'Montserrat, Arial, sans-serif', fontSize: '0.62rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.28)' }}>
               Integrity · Credibility · Professionalism · Excellence · Client Focus
