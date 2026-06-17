@@ -40,7 +40,6 @@ function SvcCard({
         width: iconSize,
         height: iconSize,
         transform: `translate(-50%, calc(-50% + ${reverse ? iconOffset * -1 : iconOffset}px))`,
-        filter: 'drop-shadow(0 0 18px rgba(107,200,192,0.35)) drop-shadow(0 0 36px rgba(107,200,192,0.18))',
       }}>
         <Image src={src} alt={alt} fill sizes={`${iconSize}px`} style={{ objectFit: 'contain' }} />
       </div>
@@ -150,11 +149,6 @@ function ConsultationCard() {
         flexShrink: 0,
         position: 'relative',
       }}>
-        <div style={{
-          position: 'absolute', inset: '-30%',
-          background: 'radial-gradient(circle, rgba(107,200,192,0.08) 0%, transparent 70%)',
-          borderRadius: '50%',
-        }} />
         <Image
           src="/NQa New Logo.png"
           alt="NQA Law Firm"

@@ -75,11 +75,11 @@ main {
   to   { opacity: 1; transform: translateY(0);    }
 }
 
-/* ── Teal glow — static, no animation ── */
+/* ── Teal glow — static, no animation, toned down for a more understated feel ── */
 .teal-glow {
   position: absolute;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(107,200,192,0.07) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(107,200,192,0.03) 0%, transparent 70%);
   pointer-events: none;
   z-index: 0;
 }
